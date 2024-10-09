@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-# filmsitesi
-=======
-<h1>Film Sitesi</h1>
 
-<h2>Ekran Görüntüsü</h2>
+# Filmsitesi
+In this project, HTML and CSS features were used and reinforced. Some JS features were left to add in later process of the course.
 
-![](filmsitesi.gif)
->>>>>>> e86cfe3 (Create README.md)
+# Preview
+
+![](filmsitesi2.gif)
+
