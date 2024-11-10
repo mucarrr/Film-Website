@@ -88,6 +88,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 1px;
+  transition: .2s ease-in all;
 }
 .side-bar {
   background-color: black;
@@ -129,6 +130,7 @@ body {
 .buttons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .buttons button {
   padding: 10px 25px;
@@ -201,6 +203,8 @@ body {
   align-items: center;
   height: 300px;
   gap: 30px;
+  transform: translateX(0);
+  transition: 1s all ease-in-out;
 }
 .movie-item-buttons i {
   cursor: pointer;
@@ -242,7 +246,50 @@ body {
 .menu-container{
   display: block;
 }
-@media(max-width: 1200px) {.menu-container{
-  display: none;
-}}
+.container.active{
+  background-color: white;
+}
+.navbar.active{
+  background-color: white;
+  color: black;
+}
+.side-bar.active{
+  background-color: white;
+  color: black;
+}
+.side-bar i.active{
+  background-color: white;
+  color: black;
+}
+.toggle.active{
+  background-color: black;
+}
+.toggle-ball.active{
+  background-color: white;
+  transform: translateX(-20px);
+}
+.movie-list-filter select.active{
+  background-color: white;
+  color: black;
+}
+.movie-list-title.active{
+  color: black;
+}
+@media only screen and (max-width: 800px){
+  .menu-container{
+    display: none;
+  }
+  .featured-content{
+    height: 50vh;
+  }
+  .featured-description{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+    padding: 0;
+  }
+  
+}
 
